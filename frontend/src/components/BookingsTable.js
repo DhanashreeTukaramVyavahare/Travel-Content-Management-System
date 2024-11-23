@@ -7,7 +7,7 @@ const BookingsTable = () => {
   useEffect(() => {
     const fetchBookings = async () => {
       try {
-        const { data } = await axios.get('http://localhost:5000/api/admin/bookings');
+        const { data } = await axios.get('https://dashboard.render.com/web/new/api/admin/bookings');
         setBookings(data);
       } catch (error) {
         console.error('Failed to fetch bookings');

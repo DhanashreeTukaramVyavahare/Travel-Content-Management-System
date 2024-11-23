@@ -9,7 +9,7 @@ const PackagesTable = () => {
   useEffect(() => {
     const fetchPackages = async () => {
       try {
-        const { data } = await axios.get('http://localhost:5000/api/admin/packages');
+        const { data } = await axios.get('https://dashboard.render.com/web/new/api/admin/packages');
         setPackages(data);
       } catch (error) {
         console.error('Failed to fetch packages:', error);
